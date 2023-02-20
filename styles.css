@@ -1,3 +1,65 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+#header {
+  background-color: #1f2224;
+  color: #a0a0a1;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 14.6667px;
+  font-weight: 300 !important;
+  letter-spacing: 0.366667px;
+  line-height: 58.6667px;
+  padding: 0px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0em;
+  left: 0;
+  height: 4em;
+  width: 100%;
+  z-index: 10002;
+}
+
+#header > a {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 14.6667px;
+  letter-spacing: 1.46667px;
+  line-height: 14.6667px;
+  font-style: normal;
+  color: #a0a0a1;
+  text-transform: uppercase;
+}
+
+#header > nav > ul > li > a {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 14.6667px;
+  font-weight: 300 !important;
+  letter-spacing: 1.46667px;
+  line-height: 58.6667px;
+  padding: 0 10px 0 24.2px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Icon  */
+
+#header > nav > ul > li > .icon1 {
+  padding: 0 24.2px 0 0;
+  font-size: 14.6667px;
+}
+
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 14.6667px;
@@ -8,6 +70,7 @@ body {
   padding: 0 0 4em 0;
 }
 
+/* Bluring whole page onClick */
 #wrapper.active {
   filter: blur(8px) !important;
   pointer-events: none;
@@ -77,7 +140,7 @@ body {
 } */
 
 #main .thumb > img {
-  /* background-position: center;
+  /*background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border: 0;
@@ -96,7 +159,6 @@ body {
   /*font-family: "Source Sans Pro", Helvetica, sans-serif;
   color: white;
   text-transform: uppercase;*/
-  margin: 0;
   /* z-index: 1; */
 }
 #main .thumb > p {
